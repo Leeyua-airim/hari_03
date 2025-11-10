@@ -8,12 +8,11 @@ import pandas as pd
 
 import plotly.graph_objects as go
 import os, sys, io, re
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
 from dotenv import load_dotenv
 
 
-from llm_hub.rpa_llm.llm_handler import (
+from llm_handler import (
     generate_answer_rag,
     post_process_answer,
     llm,
