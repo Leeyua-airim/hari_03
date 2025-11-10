@@ -12,7 +12,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"
 
 from dotenv import load_dotenv
 
-from llm_handler import run_rpa_llm, generate_answer_rag, post_process_answer, llm
+
+from llm_hub.rpa_llm.llm_handler import (
+    generate_answer_rag,
+    post_process_answer,
+    llm,
+)
 
 from streamlit_extras.dataframe_explorer import dataframe_explorer
 import warnings

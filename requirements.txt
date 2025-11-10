@@ -7,6 +7,8 @@ python-dotenv==1.1.1
 requests==2.32.5
 openai==1.107.3
 langchain==0.3.15
+langchain-core==0.3.15
+langchain-community==0.3.15
 langchain-openai==0.3.2
 rapidfuzz==3.9.6
 
@@ -16,6 +18,5 @@ plotly==5.24.1
 # Excel I/O
 openpyxl==3.1.5
 
-# Optional but useful
-# scikit-learn==1.7.2
+# Optional
 tiktoken==0.11.0
