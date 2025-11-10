@@ -33,9 +33,10 @@ if not OPENAI_API_KEY:
 # =========================
 @st.cache_data
 def load_data() -> pd.DataFrame:
-    # path = "llm_hub/rpa_llm/data/암호화_시연용_OT_1to7.xlsx"
-    path = os.path.join(BASE_DIR, "data", "암호화_시연용_OT_1to7.xlsx")
-    return pd.read_excel(path)
+    # path = os.path.join(BASE_DIR, "data", "암호화_시연용_OT_1to7.xlsx")
+    current_dir = os.path.dirname(__file__)
+    file_path = os.path.join(current_dir, "data", "암호화_시연용_OT_1to7.xlsx")
+    return pd.read_excel(file_path)
 
 df = load_data()
 
